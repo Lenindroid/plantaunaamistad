@@ -149,3 +149,8 @@ address {
     z-index: -1;
     border-radius: 15px;
 }
+
+video {
+    margin-left: auto;
+    margin-right: auto;
+}
