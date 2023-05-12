@@ -1,0 +1,151 @@
+body {
+    background: #f5f6f7;
+    color: black;
+    font-family: Helvetica;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background-color: #00bd6e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: min(5vw, 1.2em);
+    text-align: center;
+    margin-left: 10px;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+}
+
+h1, h2 {
+    font-family: Verdana, sans-serif;
+}
+  
+h2 {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 60px;
+    color: #00420b;
+}
+
+nav > ul > li {
+    color: #000005;
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+    display: block;
+}
+
+li > a { /*Contrast between elements is a key factor in visual accesibility*/
+    color: inherit;
+    text-decoration: none; /* the text-decoration property is used to add or remove text decorations such as underline, overline, line-through, or blink from the text content*/
+} 
+
+nav > ul> li:hover {
+    color: #1b1b32;
+    background-color: #dfdfe2;
+    cursor: pointer; /*The cursor property in CSS specifies the type of cursor to be displayed when the mouse pointer is over an element.*/
+}
+
+main {
+    padding-top: 40;
+}
+
+
+p {
+    margin-top: 5px;
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+footer, footer a {
+    color: rgb(0, 0, 0);
+}
+
+address {
+    text-align: center;
+    padding: 0.3em;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+    scroll-behavior: smooth; /* controls how the browser animates scrolling when the user clicks on a link that refers to an anchor within a web page*/
+  }
+}
+
+.titulo {
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.subtitulo {
+    margin: 0;
+    color: #000;
+    display: inline;
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.sabor { 
+    color: #fff;
+    margin: 7px 0;
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.7);
+    font-family: 'Dancing Script', cursive;
+    margin-top: 0;
+}
+
+.linea-division {
+    width: 80%;
+    height: 2px;
+    background-color: #36221c;
+}
+
+/*Materialize*/
+.carousel {
+    min-height: 500px;
+}
+
+.carousel .carousel-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+}
+
+.carousel .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 15px;
+}
