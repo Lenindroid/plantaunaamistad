@@ -41,8 +41,13 @@ h2 {
     text-align: center;
     margin-top: 0;
     padding-top: 60px;
-    color: #00420b;
+    color: #00bd6e;
     display: block;
+    border-bottom: #00bd6e solid 2px;
+    font-size: 130%;
+    padding-bottom: 0.15em;
+    margin: 1em 0 0.5em 0;
+    font-weight: bold;
 }
 
 nav > ul > li {
@@ -68,10 +73,10 @@ main {
 }
 
 
-p {
+p, li {
     margin-top: 5px;
-    padding-left: 15px;
-    font-size: 20px;
+    font-size: 1em;
+    padding: 1em 0 1em 0;
 }
 
 footer{
@@ -155,4 +160,13 @@ address {
     padding-top: 60px;
     display: flex;
     justify-content: center;
+}
+
+li a {
+    color: #fff;
+}
+
+.contenido {
+    padding: 2.5em;
+    text-align: justify;
 }
